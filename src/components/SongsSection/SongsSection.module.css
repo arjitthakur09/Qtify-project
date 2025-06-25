@@ -1,0 +1,26 @@
+/* SongsSection.module.css */
+.songsSection {
+  padding: 24px 32px;
+  background-color: #121212;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.tabs {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.tab {
+  color: white !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  min-width: auto !important;
+}
+
+.Mui-selected {
+  color: #34c94b !important;
+  font-weight: bold !important;
+  border-bottom: 2px solid #34c94b;
+}

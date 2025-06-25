@@ -1,0 +1,27 @@
+.section {
+  padding: 32px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.toggleBtn {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #34c94b;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}

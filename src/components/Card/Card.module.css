@@ -1,0 +1,53 @@
+.cardWrapper {
+  width: 159px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.card {
+  width: 159px;
+  height: 232px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImage {
+  width: 100%;
+  height: 176px;
+  object-fit: cover;
+  display: block;
+}
+
+.cardContent {
+  background-color: #ffffff;
+  padding: 4px 8px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* 👈 LEFT aligned chip */
+}
+
+.chip {
+  height: 20px !important;
+  font-size: 10px !important;
+  border-radius: 10px !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  padding: 2px 8px !important;
+  line-height: 1 !important;
+}
+
+.cardTitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}

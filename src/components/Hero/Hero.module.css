@@ -1,0 +1,38 @@
+.hero {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px; /* reduced space between image and text */
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.left h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
