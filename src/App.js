@@ -10,14 +10,17 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <Section
-        title="Top Albums"
-        fetchURL="https://qtify-backend-labs.crio.do/albums/top"
-      />
-      <Section
-        title="New Albums"
-        fetchURL="https://qtify-backend-labs.crio.do/albums/new"
-      />
+     <Section
+  title="Top Albums"
+  fetchURL="https://qtify-backend-labs.crio.do/albums/top"
+  type="album"   // 👈 Add this
+/>
+<Section
+  title="New Albums"
+  fetchURL="https://qtify-backend-labs.crio.do/albums/new"
+  type="album"   // 👈 Add this
+/>
+
       <SongsSection />
     </div>
   );
