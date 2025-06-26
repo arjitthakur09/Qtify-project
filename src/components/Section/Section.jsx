@@ -6,7 +6,7 @@ import Carousel from "../Carousel/Carousel";
 
 const Section = ({ title, fetchURL, isSongSection = false }) => {
   const [albums, setAlbums] = useState([]);
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true); 
 
   useEffect(() => {
     const fetchData = async () => {
