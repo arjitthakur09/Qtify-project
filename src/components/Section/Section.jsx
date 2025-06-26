@@ -43,6 +43,7 @@ const Section = ({ title, fetchURL, isSongSection = false }) => {
               image={item.image}
               title={item.title}
               follows={item.follows}
+              type="album" // 👈 VERY IMPORTANT
             />
           )}
         />
@@ -54,6 +55,7 @@ const Section = ({ title, fetchURL, isSongSection = false }) => {
               image={item.image}
               title={item.title}
               follows={item.follows}
+              type="album" // 👈 VERY IMPORTANT
             />
           ))}
         </div>

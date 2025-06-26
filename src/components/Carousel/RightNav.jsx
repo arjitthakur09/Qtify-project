@@ -3,6 +3,7 @@ import React from "react";
 const RightNav = ({ onClick }) => {
   return (
     <svg
+      className="swiper-button-next"  // 🟢 Important Swiper selector
       onClick={onClick}
       width="24"
       height="24"

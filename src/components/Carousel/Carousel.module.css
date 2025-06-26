@@ -1,12 +1,11 @@
 .carouselContainer {
   width: 100%;
-  padding: 0 1rem;
-}.carouselContainer {
-  width: 100%;
   padding: 0 32px;
   box-sizing: border-box;
+  position: relative; /* needed for absolute nav buttons */
 }
 
+/* Navigation arrows */
 .swiper-button-next,
 .swiper-button-prev {
   color: #34c94b;
@@ -16,8 +15,25 @@
   font-size: 12px;
   width: 32px;
   height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  cursor: pointer;
 }
 
+/* Position left and right buttons */
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+/* Disabled button style */
 .swiper-button-disabled {
   opacity: 0.3;
   pointer-events: none;

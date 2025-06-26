@@ -3,6 +3,7 @@ import React from "react";
 const LeftNav = ({ onClick }) => {
   return (
     <svg
+      className="swiper-button-prev"  // <-- Important for Swiper to detect it
       onClick={onClick}
       width="24"
       height="24"

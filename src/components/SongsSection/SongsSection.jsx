@@ -8,7 +8,7 @@ import styles from "./SongsSection.module.css";
 const SongsSection = () => {
   const [songs, setSongs] = useState([]);
   const [genres, setGenres] = useState([]);
-  const [selectedGenre, setSelectedGenre] = useState("All");
+  const [selectedGenre, setSelectedGenre] = useState("all");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,7 +18,7 @@ const SongsSection = () => {
           axios.get("https://qtify-backend-labs.crio.do/genres"),
         ]);
         setSongs(songsRes.data);
-        setGenres([{ label: "All" }, ...genresRes.data]);
+        setGenres([{ key: "all", label: "All" }, ...genresRes.data.data]);
       } catch (err) {
         console.error("Error fetching songs/genres:", err);
       }
@@ -31,9 +31,9 @@ const SongsSection = () => {
   };
 
   const filteredSongs =
-    selectedGenre === "All"
+    selectedGenre === "all"
       ? songs
-      : songs.filter((song) => song.genre.label === selectedGenre);
+      : songs.filter((song) => song.genre.key === selectedGenre);
 
   return (
     <div className={styles.songsSection}>
@@ -47,9 +47,9 @@ const SongsSection = () => {
       >
         {genres.map((genre) => (
           <Tab
-            key={genre.label}
+            key={genre.key}
             label={genre.label}
-            value={genre.label}
+            value={genre.key}
             className={styles.tab}
           />
         ))}
@@ -62,7 +62,8 @@ const SongsSection = () => {
             key={song.id}
             image={song.image}
             title={song.title}
-            likes={song.likes} // show likes instead of follows
+            likes={song.likes}
+            type="song"
           />
         )}
       />
